@@ -86,7 +86,9 @@ function handleGetMovie(req, res) {
     return movies.length > 0 ? res.json(movies) : res.send('No Movies Found');
   }
 }
-
+app.get('/', (req, res) => {
+  res.redirect('/movie');
+});
 app.get('/movie', handleGetMovie);
 
 app.use((error, req, res, next) => {

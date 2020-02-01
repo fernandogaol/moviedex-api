@@ -4,9 +4,8 @@
   "description": "Brenden Dowd\r Fernando Filho",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon server",
     "start": "node server.js",
+    "dev": "nodemon server",
     "predeploy": "npm audit",
     "deploy": "git push heroku master"
   },
@@ -14,7 +13,7 @@
   "engines": {
     "node": "12.7.0"
   },
-  "author": "",
+  "author": "Brenden Dowd and Fernando Filho",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
